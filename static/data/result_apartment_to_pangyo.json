@@ -1,0 +1,523 @@
+[
+    [
+        {
+            "idx": 1,
+            "total_duration": 73,
+            "legs": [
+                {
+                    "steps": [
+                        {
+                            "type": "WALKING",
+                            "duration": 5,
+                            "distance": 188
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "야막리",
+                            "bus_numbers": [
+                                "6",
+                                "6-1"
+                            ],
+                            "arrival_station": "하북삼거리",
+                            "station_count": 3,
+                            "duration": 4,
+                            "bus_types": [
+                                "마을",
+                                "마을"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 1,
+                            "distance": 65
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "진위역",
+                            "bus_numbers": [
+                                "6802"
+                            ],
+                            "arrival_station": "판교역.낙생육교.현대백화점",
+                            "station_count": 11,
+                            "duration": 43,
+                            "bus_types": [
+                                "직행좌석"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 9,
+                            "distance": 388
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idx": 2,
+            "total_duration": 110,
+            "legs": [
+                {
+                    "steps": [
+                        {
+                            "type": "WALKING",
+                            "duration": 4,
+                            "distance": 190
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "야막리",
+                            "bus_numbers": [
+                                "301",
+                                "1522",
+                                "1502"
+                            ],
+                            "arrival_station": "원영화남아파트",
+                            "station_count": 1,
+                            "duration": 3,
+                            "bus_types": [
+                                "일반",
+                                "일반",
+                                "일반"
+                            ]
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "원영화남아파트",
+                            "bus_numbers": [
+                                "5300",
+                                "5300예약"
+                            ],
+                            "arrival_station": "신논현역.인터파크",
+                            "station_count": 24,
+                            "duration": 76,
+                            "bus_types": [
+                                "직행좌석",
+                                "직행좌석"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 5,
+                            "distance": 358
+                        },
+                        {
+                            "type": "SUBWAY",
+                            "line": "신분당선",
+                            "departure_station": "신논현역",
+                            "duration": 15,
+                            "express": "일반",
+                            "station_count": 5,
+                            "arrival_station": "판교역"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idx": 3,
+            "total_duration": 104,
+            "legs": [
+                {
+                    "steps": [
+                        {
+                            "type": "WALKING",
+                            "duration": 5,
+                            "distance": 188
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "야막리",
+                            "bus_numbers": [
+                                "6",
+                                "6-1"
+                            ],
+                            "arrival_station": "하북삼거리",
+                            "station_count": 3,
+                            "duration": 4,
+                            "bus_types": [
+                                "마을",
+                                "마을"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 1,
+                            "distance": 65
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "진위역",
+                            "bus_numbers": [
+                                "6600"
+                            ],
+                            "arrival_station": "신논현역.금강빌딩",
+                            "station_count": 17,
+                            "duration": 60,
+                            "bus_types": [
+                                "직행좌석"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 6,
+                            "distance": 413
+                        },
+                        {
+                            "type": "SUBWAY",
+                            "line": "신분당선",
+                            "departure_station": "신논현역",
+                            "duration": 15,
+                            "express": "일반",
+                            "station_count": 5,
+                            "arrival_station": "판교역"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idx": 4,
+            "total_duration": 116,
+            "legs": [
+                {
+                    "steps": [
+                        {
+                            "type": "WALKING",
+                            "duration": 4,
+                            "distance": 190
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "야막리",
+                            "bus_numbers": [
+                                "301"
+                            ],
+                            "arrival_station": "수원역.역전시장",
+                            "station_count": 37,
+                            "duration": 57,
+                            "bus_types": [
+                                "일반"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 5,
+                            "distance": 363
+                        },
+                        {
+                            "type": "SUBWAY",
+                            "line": "수인분당선",
+                            "departure_station": "수원역",
+                            "duration": 37,
+                            "express": "급행",
+                            "station_count": 18,
+                            "arrival_station": "이매역"
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 1,
+                            "distance": 88
+                        },
+                        {
+                            "type": "SUBWAY",
+                            "line": "경강선",
+                            "departure_station": "이매역",
+                            "duration": 4,
+                            "express": "일반",
+                            "station_count": 2,
+                            "arrival_station": "판교역"
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 2,
+                            "distance": 111
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idx": 5,
+            "total_duration": 110,
+            "legs": [
+                {
+                    "steps": [
+                        {
+                            "type": "WALKING",
+                            "duration": 12,
+                            "distance": 706
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "갈곶초등학교",
+                            "bus_numbers": [
+                                "5300예약"
+                            ],
+                            "arrival_station": "강남역도씨에빛",
+                            "station_count": 26,
+                            "duration": 80,
+                            "bus_types": [
+                                "직행좌석"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 5,
+                            "distance": 332
+                        },
+                        {
+                            "type": "SUBWAY",
+                            "line": "신분당선",
+                            "departure_station": "강남역",
+                            "duration": 13,
+                            "express": "일반",
+                            "station_count": 4,
+                            "arrival_station": "판교역"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "idx": 1,
+            "total_duration": 147,
+            "legs": [
+                {
+                    "steps": [
+                        {
+                            "type": "WALKING",
+                            "duration": 25,
+                            "distance": 1621
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "현화고교사거리",
+                            "bus_numbers": [
+                                "80"
+                            ],
+                            "arrival_station": "평택대학교",
+                            "station_count": 46,
+                            "duration": 62,
+                            "bus_types": [
+                                "일반"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 1,
+                            "distance": 78
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "평택대학교",
+                            "bus_numbers": [
+                                "6801"
+                            ],
+                            "arrival_station": "판교역.낙생육교.현대백화점",
+                            "station_count": 15,
+                            "duration": 44,
+                            "bus_types": [
+                                "직행좌석"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 9,
+                            "distance": 388
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idx": 2,
+            "total_duration": 148,
+            "legs": [
+                {
+                    "steps": [
+                        {
+                            "type": "WALKING",
+                            "duration": 23,
+                            "distance": 1515
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "늘푸른아파트.현화초교",
+                            "bus_numbers": [
+                                "98"
+                            ],
+                            "arrival_station": "평택대학교",
+                            "station_count": 48,
+                            "duration": 62,
+                            "bus_types": [
+                                "일반"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 1,
+                            "distance": 78
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "평택대학교",
+                            "bus_numbers": [
+                                "6801"
+                            ],
+                            "arrival_station": "판교역.낙생육교.현대백화점",
+                            "station_count": 15,
+                            "duration": 44,
+                            "bus_types": [
+                                "직행좌석"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 9,
+                            "distance": 388
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idx": 3,
+            "total_duration": 144,
+            "legs": [
+                {
+                    "steps": [
+                        {
+                            "type": "WALKING",
+                            "duration": 25,
+                            "distance": 1621
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "현화고교사거리",
+                            "bus_numbers": [
+                                "810"
+                            ],
+                            "arrival_station": "평택지제역",
+                            "station_count": 27,
+                            "duration": 29,
+                            "bus_types": [
+                                "일반"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 2,
+                            "distance": 116
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "평택지제역",
+                            "bus_numbers": [
+                                "6801"
+                            ],
+                            "arrival_station": "판교역.낙생육교.현대백화점",
+                            "station_count": 24,
+                            "duration": 68,
+                            "bus_types": [
+                                "직행좌석"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 9,
+                            "distance": 388
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idx": 4,
+            "total_duration": 118,
+            "legs": [
+                {
+                    "steps": [
+                        {
+                            "type": "WALKING",
+                            "duration": 27,
+                            "distance": 1733
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 3,
+                            "distance": 212
+                        },
+                        {
+                            "type": "SUBWAY",
+                            "line": "3호선",
+                            "departure_station": "남부터미널역",
+                            "duration": 2,
+                            "express": "일반",
+                            "station_count": 1,
+                            "arrival_station": "양재역"
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 3,
+                            "distance": 172
+                        },
+                        {
+                            "type": "SUBWAY",
+                            "line": "신분당선",
+                            "departure_station": "양재역",
+                            "duration": 11,
+                            "express": "일반",
+                            "station_count": 3,
+                            "arrival_station": "판교역"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idx": 5,
+            "total_duration": 144,
+            "legs": [
+                {
+                    "steps": [
+                        {
+                            "type": "WALKING",
+                            "duration": 28,
+                            "distance": 1781
+                        },
+                        {
+                            "type": "BUS",
+                            "departure_station": "안중주공2단지",
+                            "bus_numbers": [
+                                "6800"
+                            ],
+                            "arrival_station": "광교중앙.경기도청.아주대역환승센터",
+                            "station_count": 15,
+                            "duration": 87,
+                            "bus_types": [
+                                "직행좌석"
+                            ]
+                        },
+                        {
+                            "type": "WALKING",
+                            "duration": 4,
+                            "distance": 293
+                        },
+                        {
+                            "type": "SUBWAY",
+                            "line": "신분당선",
+                            "departure_station": "광교중앙역",
+                            "duration": 20,
+                            "express": "일반",
+                            "station_count": 7,
+                            "arrival_station": "판교역"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

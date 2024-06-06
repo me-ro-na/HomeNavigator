@@ -1,0 +1,26 @@
+{% extends "includes/base.html" %}
+
+{% block title %}챗봇 상담{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pages/chatbot.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="chatbot-section">
+    <h2>부동산 상담</h2>
+    <div class="chatbot-interface">
+        <div class="chat-messages" id="chat-messages">
+            <!-- 챗봇 메시지 -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="메시지를 입력하세요...">
+            <button id="send-button">전송</button>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "includes/base.html" %}
+
+{% block title %}프로필{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pages/profile.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="profile-section">
+    <h2>프로필 정보</h2>
+    <div class="profile-info">
+        <p><strong>이름:</strong> 홍길동</p>
+        <p><strong>이메일:</strong> hong@example.com</p>
+    </div>
+    <div class="interest-list">
+        <h3>관심 목록</h3>
+        <ul>
+            <li>관심 매물 1</li>
+            <li>관심 매물 2</li>
+            <li>관심 매물 3</li>
+        </ul>
+    </div>
+    <div class="interest-area">
+        <h3>관심 지역</h3>
+        <p>서울시 강남구</p>
+    </div>
+    <div class="financial-info">
+        <h3>금융 정보</h3>
+        <p>신용 점수: 800</p>
+        <p>대출 한도: 1억원</p>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/profile.js') }}"></script>
+{% endblock %}

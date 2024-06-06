@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"],
+form input[type="number"],
+form input[type="range"],
+form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #87CEEB; /* 하늘색 */
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #76c1e1; /* 하늘색의 약간 어두운 버전 */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+a {
+    color: #87CEEB; /* 하늘색 */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #76c1e1; /* 하늘색의 약간 어두운 버전 */
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #87CEEB; /* 하늘색 */
+    color: white;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 40px; /* 로고 이미지 크기 조정 */
+    margin-right: 10px;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav input[type="text"] {
+    flex: 1;
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+nav button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #76c1e1; /* 하늘색 */
+    color: white;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #66b3da; /* 하늘색의 약간 어두운 버전 */
+}
+
+nav .profile-icon {
+    cursor: pointer;
+}
+
+/* Dashboard Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.recommendations,
+.recent-searches,
+.popular-areas,
+.financial-services {
+    /* Custom styles for dashboard sections can be added here */
+}
+
+/* Additional Services Styles */
+.additional-services {
+    margin-top: 20px;
+}
+
+.service-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-button {
+    background-color: #87CEEB; /* 하늘색 */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.service-button:hover {
+    background-color: #76c1e1; /* 하늘색의 약간 어두운 버전 */
+}
+
+/* Chatbot Styles */
+.chatbot-interface {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.chat-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.chat-message.bot {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+}
+
+.chat-message.user {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #87CEEB; /* 하늘색 */
+    color: white;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #76c1e1; /* 하늘색의 약간 어두운 버전 */
+}
+
+/* Profile Styles */
+.profile-section .profile-info,
+.profile-section .interest-list,
+.profile-section .interest-area,
+.profile-section .financial-info {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.profile-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #87CEEB; /* 하늘색 */
+    color: white;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.profile-section button:hover {
+    background-color: #76c1e1; /* 하늘색의 약간 어두운 버전 */
+}
+
+/* Recent Searches Styles */
+.recent-searches ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-searches li {
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.recent-searches li:hover {
+    background-color: #cceeff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-searches .search-query {
+    flex: 1;
+}

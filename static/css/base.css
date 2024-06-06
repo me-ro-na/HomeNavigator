@@ -1,0 +1,25 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+a {
+color: #87CEEB; /* 하늘색 */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #76c1e1; /* 하늘색의 약간 어두운 버전 */
+}

@@ -1,0 +1,22 @@
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="{{ url_for('dashboard') }}">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="검색어를 입력하세요..." id="search-input">
+            <button id="search-button">검색</button>
+        </div>
+        <div class="profile">
+            <div class="profile-icon">
+                <img src="{{ url_for('static', filename='images/user-profile.png') }}" alt="Profile Image" class="profile-image">
+                <div class="dropdown-content">
+                    <a href="{{ url_for('profile') }}">프로필 보기</a>
+                    <a href="{{ url_for('logout') }}">로그아웃</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

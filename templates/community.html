@@ -1,0 +1,18 @@
+{% extends "includes/base.html" %}
+
+{% block title %}커뮤니티 정보{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pages/community.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="community-section">
+    <h2>커뮤니티 정보</h2>
+    <!-- 커뮤니티 정보 내용 -->
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/community.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "includes/base.html" %}
+
+{% block title %}대시보드{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pages/dashboard.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="main-content">
+    <section class="dashboard">
+        <h2>대시보드</h2>
+        <div class="services">
+            <div class="service-block">
+                <h3>챗봇 상담</h3>
+                <a href="{{ url_for('chatbot') }}" class="service-button">이동</a>
+            </div>
+            <div class="service-block">
+                <h3>커뮤니티 정보</h3>
+                <a href="{{ url_for('community') }}" class="service-button">이동</a>
+            </div>
+            <div class="service-block">
+                <h3>맞춤형 금융 서비스</h3>
+                <a href="{{ url_for('financial') }}" class="service-button">이동</a>
+            </div>
+            <div class="service-block">
+                <h3>맞춤형 부동산 추천</h3>
+                <a href="{{ url_for('property') }}" class="service-button">이동</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}

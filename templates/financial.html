@@ -1,0 +1,18 @@
+{% extends "includes/base.html" %}
+
+{% block title %}맞춤형 금융 서비스{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pages/financial.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="financial-section">
+    <h2>맞춤형 금융 상품</h2>
+    <!-- 맞춤형 금융 상품 내용 -->
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/financial.js') }}"></script>
+{% endblock %}

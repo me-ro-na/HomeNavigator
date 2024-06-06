@@ -1,0 +1,62 @@
+/* Chatbot Specific Styles */
+.chatbot-interface {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.chat-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.chat-message.user {
+    background-color: #87CEEB; /* 하늘색 */
+    color: white; /* 글자 색을 흰색으로 변경 */
+    align-self: flex-end;
+}
+
+.chat-message.bot {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #87CEEB; /* 하늘색 */
+    color: white;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #76c1e1; /* 하늘색의 약간 어두운 버전 */
+}

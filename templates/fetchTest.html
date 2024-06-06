@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver Map API Example</title>
+    <script>
+        async function fetchAndCompareData() {
+            const selectElement = document.getElementById('queryLimit');
+            const limit = selectElement.value;
+            // ${window.location.origin}/api/search?query=${encodeURIComponent(query)}&type=all&searchCoord=&boundary=
+            const apiUrl = `${window.location.origin}/api/search?limit=${limit}&type=all&searchCoord=&boundary=`;
+            const resultElement = document.getElementById('result');
+            const loadingElement = document.getElementById('loading');
+
+            try {
+                // Show loading message
+                loadingElement.style.display = 'block';
+                resultElement.style.display = 'none';
+
+                // Fetch data from API
+                const apiResponse = await fetch(apiUrl);
+                if (!apiResponse.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await apiResponse.json();
+                const { summary_json, errors } = data;
+
+                // Display the summary JSON on the web page
+                resultElement.textContent = JSON.stringify({ summary_json, errors }, null, 2);
+
+                // Create a downloadable JSON file
+                const blob = new Blob([JSON.stringify({ summary_json, errors }, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'summary.json';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+                resultElement.textContent = '데이터를 가져오는 중 오류가 발생했습니다.';
+            } finally {
+                // Hide loading message
+                loadingElement.style.display = 'none';
+                resultElement.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Naver Map API Example</h1>
+    <label for="queryLimit">Select limit:</label>
+    <select id="queryLimit">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="all">All</option>
+    </select>
+    <button onclick="fetchAndCompareData()">모든 동작 실행</button>
+    <div id="loading" style="display:none;">로딩 중...</div>
+    <div id="result"></div>
+</body>
+</html>

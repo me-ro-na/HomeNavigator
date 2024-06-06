@@ -1,0 +1,44 @@
+/* Profile Specific Styles */
+.profile-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info,
+.interest-list,
+.interest-area,
+.financial-info {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.profile-info p,
+.interest-list ul,
+.interest-area p,
+.financial-info p {
+    margin: 5px 0;
+}
+
+.interest-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.interest-list li {
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.interest-list li:hover {
+    background-color: #cceeff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

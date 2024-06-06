@@ -1,0 +1,35 @@
+총 소요시간(duration): ex)53
+내용(ex)
+    1. legs[0].steps[0]
+        * 도보시간(duration): 11분
+        * 도보거리(distance): 639m
+    2. legs[0].steps[1]
+        * 호선(routes[0].name): 5호선
+        * 역(stations[0].displayName): 강동역
+        * 소요시간(duration): 4분
+        * 급행여부(routes[0].operation.name): 일반
+        * 이동 역 수(stations.length-1): 2개
+        * 하차 역(stations[stations.length-1].displayName): 올림픽공원역
+    4.
+        * 호선: 9호선
+        * 급행여부: 급행
+        * 역: 올림픽공원역
+        * 소요시간: 16분
+        * 이동 역 수: 5개
+        * 하차 역: 신논현역
+    6.
+        * 호선: 신분당선
+        * 급행여부: 일반
+        * 하차 역: 신논현역
+        * 소요시간: 15분
+        * 이동 역 수: 5개
+        * 하차 역: 판교역
+
+
+버스일 경우(type == "bus")
+    * 버스 승차지(stations[0].displayName): 서울프라임한방병원
+    * 버스 번호(routes[0~routes.length-1].longName): 3413
+    * 버스 하차지(stations[stations.length-1].displayName): 올림픽공원역
+    * 이동 정류장 수(stations.length-1): 5개
+    * 소요시간(duration): 10분
+    * 버스 종류(routes[0~routes.length-1].type.name): 일반
